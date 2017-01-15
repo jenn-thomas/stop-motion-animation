@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Stop Motion Animation</title>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts/adapter.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+    
+</head>
+
+<body>
+<div class="header">
+	<div class="headerContent">	   	   
+        <h2>Stop Motion Animation</h2>
+        <select class="selectCamera"></select>
+<!--
+        <ul class="dropdown">
+        	<li><h3 id="cameraTitle">Select Camera &nbsp; 
+                        <div class="arrowDown"></div>
+                    </h3>
+                    <ul class="sub_menu">
+                        <li>Test One</li>
+                        <li>Test Two</li>
+                    </ul>
+        	</li>
+        </ul>
+-->
+		
+	</div>
+</div>
+    <div class="container">
+        <div class="topContainer">
+            <div class="videoContainer" id="videoLeft">
+                <div class="options" id="selectCamera">
+                    <div class="info" id="mode">
+                        <ul>
+                            <li><a class="activeMode" href="">Movie</a></li>
+                            <li><a class="inactiveMode" href="">Mode 1</a></li>
+                            <li><a class="inactiveMode" href="">Mode 2</a></li>
+                            <li><a class="inactiveMode" href="">Mode 3</a></li>
+                        </ul>    
+                </div>                
+                </div>
+                <div class="buffer"></div>
+                <div class="samVideoContainer" id="samLeft">
+                    <div id="samEmptyVideo" class="left">
+                        <span>
+                            <div>We need access to your webcam!</div>
+                        </span>
+                    </div>
+                    <canvas class="samCanvas" id="liveStream" style="display:none"></canvas>
+                    <canvas class="samOverlay" style="display:none"></canvas>
+                </div>
+                <div class="controls" id="left">
+                    <div class="controlPanel" id="left" style="text-align:center">
+<!--                        <img id="record" src="/images/record.png">-->
+                        <i id="record" class="fa fa-camera fa-3x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="videoContainer" id="videoRight">
+                <div class="options" id="download"></div>
+                <div class="samVideoContainer" id="samRight">
+                    <div id="samEmptyVideo"></div>
+                    <canvas class="samCanvas" id="currentFrame"></canvas>
+                </div>
+                <div class="controls" id="right">
+                    <div class="controlPanel" id="right" style="text-align:center">
+                        <i id="play" class="fa fa-play fa-3x" aria-hidden="true"></i>
+<!--                        <img id="play" src="/images/play.png">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </div>
+    <div class="footer">
+    
+    </div>
+    <video id="samVideo" width="460" height="345" autoplay style="display:none"></video>
+
+</body>
+</html>

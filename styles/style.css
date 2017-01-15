@@ -1,0 +1,391 @@
+html, h1, h2, h3, h4, h5, h6, canvas {
+    padding:0;
+    margin:0;
+}
+
+body{
+  background-color: #ecf2f8;
+  margin:0;
+  padding: 0;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+html, h1, h2, h3, h4, h5, h6, canvas {
+    padding:0;
+    margin:0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: #ecf2f8;
+  margin:0;
+  padding: 0;
+  width: 100%;
+  overflow-y: hidden;
+    font-family: sans-serif;
+}
+
+
+.header {
+    margin: 0 auto;
+    background-color:#4477b2;
+    box-shadow: 0 3px 2px -2px gray;
+}
+
+.headerContent {
+    padding: 10px 20px;
+    color: white;
+}
+
+.headerContent h2 {
+    display: inline;
+}
+
+/*
+.headerContent ul {
+    display: inline;
+    float: right;
+}
+*/
+
+/* 
+	LEVEL ONE
+*/
+/*
+ul.dropdown li      {
+    background-color: #779ecb;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 7px;
+    margin-top: -2px;
+    padding-right: 10px;
+    background-color: #779ecb;
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: relative
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover { background-color: #396394; }
+*/
+
+
+/* 
+	LEVEL TWO
+*/
+/*
+ul.dropdown ul 	{ 
+    text-align: left;
+    width: 100%; 
+*/
+/*
+    background: white;
+    color: #396394;
+*/
+/*
+    display: none; 
+    position: absolute; 
+    top: 100%;                               
+    left: 0px; 
+    z-index: 999999; 
+}
+*/
+
+
+.arrowDown {
+    display: inline-block;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 10px;
+    height: 10px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -ms-transform-origin: 20% 40%; /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    transform-origin: 20% 40%;    
+    margin-top: -2px;
+    margin-left: 5px;
+    float:right;
+}
+
+select {
+    font-size: 18px;
+    float: right;
+    color: white;
+    background-color: #779ecb;
+    border: none;
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+select:focus {
+    outline:0;
+}
+
+select:hover {
+    background-color: #396394;
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 960px;
+/*    min-width: 800px;*/
+    height: 600px;
+/*    background-color: #dce6f2;*/
+/*
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+*/
+    color: white;
+}
+
+.topContainer{
+    height: 450px;
+}
+
+.carousel{
+    height: 140px;
+    background-color: #4477b2;
+    margin: 0px 4px;
+}
+
+.videoContainer {
+    width: 476px;
+    float: left;
+    display: inline-block;
+    height: 425px;
+/*    background-color: black;*/
+/*   border: solid 1px black;*/
+    float: left;
+    margin-top: 5px;
+}
+
+#videoLeft {
+    margin-left: 4px;
+}
+#videoRight {
+    margin-right: 4px;
+}
+
+.options#selectCamera {
+    height: 39px;
+    margin-top: 4px;
+}
+
+.options#download {
+    background-color: #4477b2;
+    height: 39px;
+    margin-top: 4px;
+}
+
+
+.info > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.info > ul > li {
+    float: left;
+}
+
+.info > ul > li a {
+    display: block;
+    color: white;
+    font-size:15px;
+    text-align: center;
+    padding: 9px 16px;
+    text-decoration: none;
+/*
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+*/
+    background-color: #4477b2;
+    border: solid 1px #5e8dc2;
+    border-bottom: none;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.info > ul > li a.activeMode {
+    color: black;
+    background-color: #aec5e0;
+/*    border: solid 1px #fd3d3c;*/
+    border-color: #aec5e0;
+/*    border-bottom: none;*/
+    pointer-events: none;
+    cursor: default;
+/*    padding-bottom: 10px;*/
+}
+
+li a.inactiveMode:hover {
+    background-color: #5e8dc2;
+    border-color: #5e8dc2;
+}
+
+/*
+div#selectCamera:hover  {
+    background-color: #fe8a8a;
+    border-color: #fe7776;
+}
+*/
+
+/*
+#selectCamera {
+ background-color: #3e9ea2;
+ text-align: left;
+ border: solid 1px #fd3d3c;
+ border-radius: 0px 5px 0px 0px;
+ -moz-border-radius: 0px 5px 0px 0px;
+ -webkit-border-radius: 0px 5px 0px 0px; 
+ cursor: pointer;
+ -o-transition:.5s;
+ -ms-transition:.5s;
+ -moz-transition:.5s;
+ -webkit-transition:.5s;
+ transition:.5s;
+}
+*/
+
+.samVideoContainer {
+    position:relative;
+    height:345px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+#samLeft {
+/*    border: solid 2px #fd6463;*/
+    padding-top:4px;
+    background-color: #aec5e0;
+}
+
+#samRight {
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color: #4477b2;
+}
+
+#samEmptyVideo {
+    border: 1px solid white;
+    height: 345px;
+    width: 460px;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+}
+
+.left#samEmptyVideo {
+    border: 1px solid #4477b2;
+}
+
+#samEmptyVideo span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+canvas{
+    width:460px;
+    height:345px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: white;
+}
+
+.controls {
+    width: 100%;
+    margin: 0 auto;
+    height: 65px;
+    position: relative;
+    border-bottom: 1px solid #5e8dc2;
+}
+
+.controls#left{
+    background-color: #aec5e0;
+}
+
+.controls#right{
+    background-color:#4477b2;
+/*    padding-bottom: 7px;*/
+}
+
+.controlPanel{
+    position: absolute;
+/*    display: table-cell;*/
+/*    vertical-align: middle;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+    height: 50px;
+
+}
+
+.controlPanel#left{
+    background-color: #aec5e8;
+    border-bottom: solid 2px #193157;
+    border-right: solid 2px #193157;
+}
+
+.controlPanel#right{
+/*    margin-top: -2px;*/
+    background-color: #5e8dc2;
+    border-bottom: solid 2px #193157;
+    border-right: solid 2px #193157;
+}
+
+.image {
+    display:inline-block;
+    margin: 0; padding: 0;
+/*    background-color: black;*/
+    width: 240px;
+    height: 100%;
+    border-right: 1px solid #5e8dc2;
+}
+
+#record, #play {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+
+/*
+.footer {
+    width:100%;
+    background-color:#4477b2;
+    height:20px;
+    margin-top:10px;
+}
+*/
